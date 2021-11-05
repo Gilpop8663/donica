@@ -1,0 +1,80 @@
+@import "reset.scss";
+@import "_variable.scss";
+@import "_mixins.scss";
+@import "_extends.scss";
+@import url("https://fonts.googleapis.com/css2?family$uafamily=Montserrat:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  font-size: 32px;
+  padding: 43px;
+  margin-bottom: 165px;
+}
+
+main {
+  margin-left: 40px;
+  display: grid;
+  grid-auto-rows: 1fr;
+  margin-right: 40px;
+  .main__top {
+    display: grid;
+    grid-template-columns: 1fr 4fr 7fr;
+    align-items: flex-end;
+    border-bottom: 1px solid black;
+    font-size: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+  }
+  .main__content {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 7fr;
+    border-bottom: 1px solid black;
+    align-items: flex-end;
+    &:hover {
+      font-style: italic;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+section {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 100px;
+  font-size: 25px;
+  line-height: 44px;
+  span {
+    font-size: 10px;
+  }
+  .what {
+    font-size: 25px;
+    line-height: 44px;
+    border-bottom: 1px solid black;
+    &:hover {
+      font-style: italic;
+    }
+  }
+}
+
+footer {
+  margin-top: 50px;
+  margin-left: 40px;
+  padding-bottom: 60px;
+}
